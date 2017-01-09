@@ -9,6 +9,13 @@ Things you may want to cover:
 
 * System dependencies
 
+  misc/sound_analyzer.py depends on:
+
+  sudo pip install sounddevice
+  sudo pip install websocket
+  sudo pip install websocket_client
+
+
 * Configuration
 
 * Database creation
