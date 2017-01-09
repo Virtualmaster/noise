@@ -1,7 +1,7 @@
 $(function () {
     var len = 100;
     var base = Array.apply(null, {length: len}).map(Number.call, Number)
-    var init_data = Array.apply(null, {length: len}).map(function(){return 1}, function(){return [1]})
+    var init_data = Array.apply(null, {length: len}).map(function(){return 0.1}, function(){return 0.1})
     Highcharts.chart('highcharts_container', {
         title: {
             text: 'Chart',
@@ -32,6 +32,13 @@ $(function () {
             align: 'right',
             verticalAlign: 'middle',
             borderWidth: 0
+        },
+        plotOptions: {
+        line: {
+            marker:{
+                enabled: false
+            }
+        }
         },
         series: [{
             name: 'noise',
