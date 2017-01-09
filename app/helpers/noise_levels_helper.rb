@@ -1,0 +1,2 @@
+module NoiseLevelsHelper
+end

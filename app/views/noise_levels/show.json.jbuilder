@@ -1,0 +1,1 @@
+json.partial! "noise_levels/noise_level", noise_level: @noise_level

@@ -1,0 +1,2 @@
+class NoiseLevel < ApplicationRecord
+end

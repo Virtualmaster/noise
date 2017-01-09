@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Noise Levels</h1>
+
+<div id="highcharts_container"></div>
+
+<button onclick="App.noise_level.perform('run_noise_script')">Start!</button>
+
+<!--
+<table>
+  <thead>
+    <tr>
+      <th>Value</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @noise_levels.each do |noise_level| %>
+      <tr>
+        <td><%= noise_level.value %></td>
+        <td><%= link_to 'Show', noise_level %></td>
+        <td><%= link_to 'Edit', edit_noise_level_path(noise_level) %></td>
+        <td><%= link_to 'Destroy', noise_level, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+
+<br>
+
+<%= link_to 'New Noise Level', new_noise_level_path %>
+-->

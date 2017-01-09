@@ -1,0 +1,22 @@
+<%= form_for(noise_level) do |f| %>
+  <% if noise_level.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(noise_level.errors.count, "error") %> prohibited this noise_level from being saved:</h2>
+
+      <ul>
+      <% noise_level.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :value %>
+    <%= f.text_field :value %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

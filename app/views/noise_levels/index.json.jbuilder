@@ -1,0 +1,1 @@
+json.array! @noise_levels, partial: 'noise_levels/noise_level', as: :noise_level
